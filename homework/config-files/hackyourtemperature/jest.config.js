@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   // Tells jest that any file that has 2 .'s in it and ends with either js or jsx should be run through the babel-jest transformer
   transform: {
     "^.+\\.jsx?$": "babel-jest",
