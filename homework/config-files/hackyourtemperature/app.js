@@ -14,7 +14,7 @@ app.post("/weather", (req, res) => {
   )
     .then((response) => response.json())
     .then((data) => {
-      if (data.cod === "404") {
+      if (data.cod === "404" || data.cod === "400") {
         res.send({ weatherText: "City is not found!" });
       } else {
         const temperature = data.main.temp;
